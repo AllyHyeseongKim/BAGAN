@@ -11,7 +11,7 @@ import pickle
 from collections import defaultdict
 
 import keras.backend as K
-K.set_image_dim_ordering('th')
+K.set_image_data_format('channels_first')
 
 import keras
 from keras.layers.advanced_activations import LeakyReLU
